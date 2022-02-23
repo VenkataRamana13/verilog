@@ -1,0 +1,43 @@
+RISC - simple implementation 
+CISC - complex implementation
+
+pipelining - single result every clock cycle. 
+superscalar - multiple result every clock cycle (no ILP)
+multithreading - multiple threads every clock cycle (implements TLP)
+
+in multicore cpu, each core has a dedicated instruction cache and data cache
+
+i/o 
+when i/o device wants to communicate for example by a keyboard press, an interrupt is sent 
+which halts the current process and transfers control to the interrupt handler. 
+
+x86 - 'in' and 'out' 
+'load' and 'store'
+
+high performance computers - multiple CPUs
+Supercomputer - parallel systems - distributed shared memory(DSM) - distributed systems - TCP/IP communication
+
+steps for designing a combinational circuit: 
+1) truth table 
+2) kmap
+3) design circuit 
+4) simulate and verify correctness
+
+structural and testbench using verilog and display 
+dataflow and testbench using verilog and monitor
+vcd dumpfile for gtkwave
+vvp a.out for non graphical output
+
+CMOS - pmos and nmos
+pmos - gate voltage 0 - source and drain at same voltage level
+nmos - gate voltage 1 - source and drain at same voltage level
+implementation of CMOS not, nand, nor, and, or
+supply0 gnd; 
+supply1 vdd; 
+pmos/nmos(drain, source, gate);
+
+levels/styles of verilog HDL 
+1) transistor switch level - cmos, pmos, nmos
+2) logic gate level - and, not, or etc.         (multiplexer built in this level) (read on tristate buffers)
+3) dataflow style - only logic - C style binary operators 
+4) behavioral style - highest level of abstraction - only algorithm - programming language like C
